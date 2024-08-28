@@ -7,15 +7,13 @@
 }
 
 img{
-    height: 200px;
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
+    height: 85px;
+    width: 180px;
 }
 
 html{
     height: 500vh;
-    background-color: #a0c9da;
+    background-color: #ffffff;
 }
 
 .container{
@@ -26,12 +24,12 @@ html{
 .flex{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 header{
     width: 100%;
-    padding: 60px 4%;
+    padding: 2% 4%;
     position: fixed;
     top: 0;
     left: 0;
@@ -44,12 +42,7 @@ header.rolagem{
 }
 
 header.rolagem a, header.rolagem i{
-    color: #FE775A;
-}
-
-header i{
-    font-size: 30px;
-    color: #fff;
+    color: #164059;
 }
 
 header ul{
@@ -62,21 +55,22 @@ header ul li{
 }
 
 header ul li a{
-    color: #fff;
+    color: #B8CAD9;
     text-decoration: none;
 }
 
-.banner{
-    height: 100vh;
-    background-image: url(/imagens/medina-inicial.png);
+.backgrond{
+    height: 121vh;
+    width: 216vh;
     background-position: 100% 0;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
 
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
+
 
 .banner h1{
     color: #fff;
