@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    height: 85px; /* Altura padrão para a logo azul */
+    width: 180px; /* Largura padrão para a logo azul */
+}
+
+.logo-branca {
+    height: 110px; /* Altura específica para a logo branca */
+    width: 200px; /* Largura específica para a logo branca */
+    /* Adicione outras propriedades específicas aqui, se necessário */
+}
+
+html {
+    height: 500vh;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header {
+    width: 100%;
+    padding: 2% 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+
+header.rolagem {
+    background-color: #fff;
+    padding: 20px 4%;
+}
+
+header.rolagem a {
+    color: #164059;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a {
+    color: #B8CAD9;
+    text-decoration: none;
+}
+
+.backgrond {
+
+    /* notebook */
+    /* height: 121vh;
+    width: 216vh; */
+
+    /* desktop casa */
+    height: 108vh;
+    width: 192vh;
+
+    /* background-position: 100% 0; */
+}
+
+article{
+    text-align: center;
+    padding: 50px;
+}
+
+h1.o-surf{
+    font-size: 50px;
+}
+
+figure{
+    float: left;
+    margin: 0 20px 20px 0; /* Margem direita e inferior */
+    width: 100px; /* Ajuste a largura da imagem aqui */
+    height: 100px; /* Mantém a proporção da imagem */
+}
