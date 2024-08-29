@@ -93,3 +93,59 @@ figure{
     width: 100px; /* Ajuste a largura da imagem aqui */
     height: 100px; /* Mantém a proporção da imagem */
 }
+
+/* ------------------------------------------------------ */
+/* FOOTER */
+footer {
+    background-color: #164059; /* Cor de fundo do footer */
+    color: #ffffff; /* Cor do texto */
+    padding: 40px 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+.footer-content {
+    margin-bottom: 20px; /* Espaçamento entre o conteúdo e o copyright */
+}
+
+.footer-content h3 {
+    font-size: 20px; /* Aumenta o tamanho do título */
+    color: #ffffff;
+    text-align: left;
+    margin-bottom: 15px; /* Aumenta o espaçamento abaixo do título */
+    font-weight: lighter;
+    color: #A5A3A3;
+}
+
+.footer-content p {
+    max-width: 600px; /* Largura máxima do parágrafo */
+    margin: 0 auto; /* Centraliza o parágrafo */
+    text-align: left;
+    line-height: 1.8; /* Aumenta a altura da linha para melhor legibilidade */
+    color: #A5A3A3;
+}
+
+.socials {
+    list-style: none; /* Remove a lista padrão */
+    padding: 0; /* Remove o padding */
+    display: flex; /* Exibe os ícones em linha */
+    justify-content: center; /* Centraliza os ícones */
+    margin-top: 15px; /* Aumenta o espaçamento acima dos ícones */
+}
+
+.socials a {
+    color: #ffffff; /* Cor dos ícones */
+    margin: 0 15px; /* Aumenta o espaçamento entre os ícones */
+    font-size: 20px; /* Aumenta o tamanho dos ícones */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+
+.footer-bottom p {
+    margin: 0; /* Remove margens */
+    font-size: 16px; /* Aumenta o tamanho da fonte */
+}
+
+.footer-bottom span {
+    font-weight: bold; /* Destaca o nome do designer */
+}
+
