@@ -5,6 +5,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* fonte titulo */
+
+
+  
+/* ------------------------------------------------------------------ */
+
 .logo {
     height: 85px; /* Altura padrão para a logo azul */
     width: 180px; /* Largura padrão para a logo azul */
@@ -20,6 +26,37 @@ html {
     height: 500vh;
     background-color: #ffffff;
 }
+
+p{
+    text-align: justify;
+    padding: 15px 60px;
+}
+
+.ultimo{
+    margin-bottom: 40px;
+}
+
+/* ------------------------------------------------------------------ */
+
+.p-img-inicio{
+    display: flex;
+}
+
+.medina-inicio{
+    max-width: 100%;
+    height: 23em;
+}
+/* ------------------------------------------------------------------ */
+
+.p-img2-inicio{
+    display: flex;
+}
+
+.evolucao{
+    max-width: 100%;
+    height: 23em;
+}
+/* ------------------------------------------------------------------ */
 
 .container {
     max-width: 1280px;
@@ -94,7 +131,7 @@ figure{
     height: 100px; /* Mantém a proporção da imagem */
 }
 
-/* ------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
 /* FOOTER */
 footer {
     background-color: #164059; /* Cor de fundo do footer */
