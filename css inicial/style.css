@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 /* fonte titulo */
@@ -10,7 +13,10 @@
 
   
 /* ------------------------------------------------------------------ */
-
+body{
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+}
 .logo {
     height: 85px; /* Altura padrão para a logo azul */
     width: 180px; /* Largura padrão para a logo azul */
@@ -39,17 +45,45 @@ article{
 }
 
 h1.o-surf{
+    font-family: "Libre Baskerville", serif;
     font-size: 50px;
 }
 
 h1.curiosidades-do-surfe{
+    font-family: "Libre Baskerville", serif;
     text-align: center;
-    font-size: 45px;
+    font-size: 40px;
 }
 
+h1.inicio-historia{
+    font-family: "Libre Baskerville", serif;
+    font-size: 40px;
+}
+
+h1.historia-surfe{
+    font-family: "Libre Baskerville", serif;
+    font-size: 40px;
+}
+
+h1.regras{
+    font-family: "Libre Baskerville", serif;
+    font-size: 40px;
+} 
+/* PROBLEMA!!! */
+
+h1.materiais{
+    font-family: "Libre Baskerville", serif;
+    font-size: 40px;
+}
+
+h1.beneficios{
+    font-family: "Libre Baskerville", serif;
+    font-size: 40px;
+}
 article.curiosidades{
     padding: 2px 20em 5em 20em;
     text-align: justify;
+    font-size: 17px;
     
 }
 
