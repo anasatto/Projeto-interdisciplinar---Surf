@@ -8,6 +8,7 @@
     <title>Crista da Onda</title>
 </head>
 <body>
+    <img class="fundo-contato" src="imagens/contato.jpeg" alt="">
 
     <header id="header">
         <div class="container">
@@ -30,25 +31,22 @@
         </div><!--container-->
     </header>
 
-    <h1 class="titulo-contato">Vamos conversar. <br>
-     Conte-nos o que achou do nosso conteúdo.</h1>
-
     <section class="form-container">
         <div class="container">
             <form method="post" action="resultados.php">
-                <h1>Entre em contato</h1>
+
                 <p>Nos deixe uma mensagem</p>
                 <div class="input-single">
-                    <input class="input" type="text" id="nome" required>
+                    <input class="input" type="text" id="nome" name="nome" required>
                     <label for="nome">Nome completo</label>
                 </div>
                 <div class="input-single">
-                    <input class="input" type="text" id="email" required>
+                    <input class="input" type="email" id="email" name="email" required>
                     <label for="email">E-mail</label>
                 </div>
                 <div class="input-single">
-                    <input class="input" type="text" id="mensagem" required>
-                    <label for="text">Sua mensagem</label>
+                    <textarea class="input" id="mensagem" name="mensagem" required></textarea>
+                    <label for="mensagem">Sua mensagem</label>
                 </div>
                 <div class="btn"><input type="submit" value="Enviar"></div>
             </form>
