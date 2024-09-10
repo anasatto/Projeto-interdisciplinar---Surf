@@ -81,3 +81,61 @@ header ul li a{
 }
 
 
+/* ------------------------------------------------------ */
+/* OLIMPIADAS */
+
+.imagens1{
+    display: flex;
+ 
+}
+
+.imagens2{
+    display: flex;
+
+}
+
+/* ------------------------------------------------------ */
+
+.div-felipe{
+    width: 30em;
+    height: 20em;
+}
+.felipe-olimpiadas{
+    /* height: auto; */
+}
+
+/* ------------------------------------------------------ */
+
+.div-assista{
+    width: 30em;
+    height: 20em;
+}
+
+.assista{
+    /* height: auto; */
+}
+
+/* ------------------------------------------------------ */
+
+.div-legado{
+    width: 30em;
+    height: 20em;
+}
+
+.legado{
+    height: auto;
+
+}
+
+
+/* ------------------------------------------------------ */
+
+.div-final{
+    width: 30em;
+    height: 20em;
+}
+
+.final{
+    height: auto;
+
+}
