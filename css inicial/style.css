@@ -239,12 +239,19 @@ header ul li a {
 footer {
     background-color: #164059; /* Cor de fundo do footer */
     color: #ffffff; /* Cor do texto */
-    padding: 40px 20px; /* Espaçamento interno */
+    padding: 40px 2px; /* Espaçamento interno */
     text-align: center; /* Centraliza o texto */
 }
 
 .footer-content {
     margin-bottom: 20px; /* Espaçamento entre o conteúdo e o copyright */
+}
+
+img.img-footer {
+    width: 25em; /* Largura da imagem */
+    height: auto; /* Mantém a proporção */
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem */
 }
 
 .footer-content p {
@@ -283,10 +290,3 @@ footer {
     color: #cccccc;
 }
 
-
-img.img-footer{
-    width: 25em; /* Largura da imagem */
-    height: auto; /* Mantém a proporção */
-    align-items: center;
-    margin-right: 20em; /* Espaçamento à direita da imagem */
-}
