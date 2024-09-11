@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
 
 * {
     margin: 0;
@@ -45,6 +43,7 @@ header {
     left: 0;
     transition: .5s;
     background-color: #FFFDF1;
+    z-index: 10;
 }
 
 
@@ -95,7 +94,7 @@ p{
 
 article{
     text-align: center;
-    padding: 10em;
+    padding: 1em 5em 5em 5em;
 }
 
 
@@ -115,7 +114,7 @@ article{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 15em;
+    padding: 8em 10em 5em 10em;
 }
 
 .final{
@@ -143,8 +142,54 @@ article{
 }
 
 /* ------------------------------------------------------------------- */
+/* CAROUSEL */
 
+.carousel {
+    position: relative;
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10em;
+    z-index: 5;
+}
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+.carousel img {
+    width: 100%;
+    border-radius: 5px;
+}
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.carousel-control {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
 
+@media (max-width: 768px) {
+    .carousel {
+      width: 100%;
+    }
+    .main-container {
+      flex-direction: column-reverse; /* Inverte a ordem dos elementos em telas menores */
+    }
+  }
 
 /* ------------------------------------------------------------------ */
 /* FOOTER */
@@ -202,3 +247,16 @@ img.img-footer {
     text-align: center;
     color: #cccccc;
 }
+
+/* Para telas com largura máxima de 768px */
+@media (max-width: 768px) {
+    .container {
+      max-width: 100%; /* O container ocupa toda a largura da tela */
+      padding: 20px;
+    }
+    .logo {
+      height: 50px;
+      width: 100px;
+    }
+    /* Outras regras específicas para telas menores */
+  }
