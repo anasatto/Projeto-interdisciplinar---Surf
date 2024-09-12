@@ -63,8 +63,8 @@ h1.historia-surfe{
 h1.regras{
     font-family: "Libre Baskerville", serif;
     font-size: 40px;
+
 } 
-/* PROBLEMA!!! */
 
 h1.materiais{
     font-family: "Libre Baskerville", serif;
@@ -123,7 +123,7 @@ h2.titulo-curiosidades{
     display: flex;
 }
 
-.regras{
+.img-regras{
     width: 30em;
     height: 20em;
 }
@@ -162,7 +162,7 @@ h2.titulo-curiosidades{
     display: flex;
  }
  
- .beneficios{
+ .img-beneficios{
      width: 30em;
      height: 17em;
 
@@ -248,7 +248,7 @@ footer {
 }
 
 img.img-footer {
-    width: 25em; /* Largura da imagem */
+    width: 20em; /* Largura da imagem */
     height: auto; /* Mantém a proporção */
     display: block;
     margin: 0 auto; /* Centraliza a imagem */
@@ -263,19 +263,19 @@ img.img-footer {
 
 .socials {
     display: flex; /* Exibe os ícones em linha */
-    justify-content: center; /* Centraliza os ícones */
-    padding: 0 0 5em 0;
+    justify-content: right; /* Centraliza os ícones */
+    padding: 0 9em 8em 0;
 }
 
 .socials a {
     color: #ffffff; /* Cor dos ícones */
     margin: 0 10px; /* Espaçamento entre os ícones */
-    font-size: 26px; /* Tamanho dos ícones */
+    font-size: 28px; /* Tamanho dos ícones */
     text-decoration: none; /* Remove o sublinhado */
 }
 
 .footer-bottom {
-    margin-top: 20px; /* Espaçamento acima do copyright */
+    margin-top: 1px; /* Espaçamento acima do copyright */
 }
 
 .footer-bottom p {
