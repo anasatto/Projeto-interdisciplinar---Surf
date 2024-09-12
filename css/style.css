@@ -114,7 +114,7 @@ article{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 8em 10em 5em 10em;
+    padding: 10em 10em 8em 10em;
 }
 
 .final{
@@ -142,14 +142,14 @@ article{
 }
 
 /* ------------------------------------------------------------------- */
-/* CAROUSEL */
+/* CAROUSEL OLIMPIADAS */
 
 .carousel {
     position: relative;
     width: 60%;
     margin: auto;
     overflow: hidden;
-    border: 1px solid #ddd;
+    border: 1px solid #FFFDF1;
     border-radius: 5px;
     margin-bottom: 10em;
     z-index: 5;
@@ -175,7 +175,7 @@ article{
     transform: translateY(-50%);
 }
 .carousel-control {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(22, 64, 89, 0.267);
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -190,6 +190,22 @@ article{
       flex-direction: column-reverse; /* Inverte a ordem dos elementos em telas menores */
     }
   }
+/* ------------------------------------------------------------------ */
+/* RESULTADOS */
+
+.h1-resultados{
+    font-family: "Libre Baskerville", serif;
+    font-size: 50px;
+    margin-top: 3em;
+}
+
+.p-resultados-feminino{
+    padding: 2em 10em 8em 10em;
+}
+
+.feminino{
+    display: flex;
+}
 
 /* ------------------------------------------------------------------ */
 /* FOOTER */
