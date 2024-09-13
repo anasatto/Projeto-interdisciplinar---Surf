@@ -63,89 +63,34 @@
         <br>
         <div class="p-img-inicio"><img class="olimpiada" src="imagens/Teahupoo-Olimpiadas-de-Paris-2024.jpg" alt="">
 
-        <p>Surf: A Inovadora Inclusão nas Olimpíadas e Seu Impacto Global <br>
+        <p class="p-olimpiadas">
+            <b>Surf: A Inovadora Inclusão nas Olimpíadas e Seu Impacto Global.</b> <br>
             O surf, um esporte emblemático das culturas litorâneas e uma expressão da conexão entre o homem e o mar, fez sua estreia nas Olimpíadas durante os Jogos de Tóquio 2020, realizados em 2021 devido à pandemia de COVID-19. Este evento representou um marco histórico para o esporte, que, apesar de sua popularidade global, não havia sido incluído no programa olímpico até então.
             <br>
             <br>
-            A Inclusão no Programa Olímpico <br>
+            <b>A Inclusão no Programa Olímpico:</b> <br>
             A decisão de incluir o surf no programa dos Jogos Olímpicos foi anunciada pelo Comitê Olímpico Internacional (COI) em 2016, como parte de uma estratégia para modernizar e diversificar os esportes presentes no evento. A escolha do surf visava atrair uma audiência mais jovem e engajar o público global com um esporte dinâmico e visualmente atraente.
             A competição foi realizada na Praia de Tsurigasaki, localizada na província de Chiba, a cerca de 100 km da capital japonesa, Tóquio. A seleção desta localização foi estratégica, buscando garantir condições ideais de ondas para a competição, um fator essencial para o desempenho dos atletas.
-            <br>
-            <br>
-            Formato da Competição <br>
-            O formato da competição olímpica de surf seguiu um sistema de heats eliminatórios, onde os surfistas competiam em baterias para avançar às fases subsequentes. A
-            <br>
-            <br>
         </p>
 </div>
-<p>pontuação dos atletas era baseada na execução de manobras, estilo e na dificuldade das ondas. Esta estrutura visava proporcionar uma avaliação justa e precisa do desempenho dos competidores em condições variáveis.</p>
+<br>
+<p> <b>Formato da Competição:</b> <br>
+    O formato da competição olímpica de surf seguiu um sistema de heats eliminatórios, onde os surfistas competiam em baterias para avançar às fases subsequentes. A pontuação dos atletas era baseada na execução de manobras, estilo e na dificuldade das ondas. Esta estrutura visava proporcionar uma avaliação justa e precisa do desempenho dos competidores em condições variáveis.</p>
 
-<p>Impacto Cultural e Desafios <br>
+<p> <b>Impacto Cultural e Desafios:</b> <br>
     A presença do surf nos Jogos Olímpicos ampliou significativamente a visibilidade do esporte, atraindo a atenção de um público global que talvez não estivesse familiarizado com a complexidade e a beleza do surf competitivo. Esse aumento de visibilidade tem potencial para inspirar novos praticantes e aumentar a participação em esportes aquáticos em todo o mundo.
     No entanto, a inclusão do surf também enfrentou críticas de alguns puristas, que argumentaram que a natureza altamente competitiva dos Jogos Olímpicos poderia contrastar com a filosofia tradicional do surf, que valoriza a expressão pessoal e a conexão com o ambiente natural sobre a competição.  
 </p>
-        <p>Conclusão <br>
+        <p> <b>Conclusão:</b> <br>
             A estreia do surf nas Olimpíadas representa um passo significativo na evolução e reconhecimento global do esporte. Ao integrar o surf ao programa olímpico, o COI não apenas diversificou a gama de esportes no evento, mas também proporcionou uma plataforma para que o surf alcançasse novas audiências e solidificasse seu status como um esporte de importância mundial. A inclusão do surf marca um novo capítulo em sua rica história, abrindo portas para futuras edições e consolidando seu lugar no panteão dos esportes olímpicos.
         </p>
-        <p>Destaques e Curiosidades <br>
+        <p> <b>Destaques e Curiosidades:</b> <br>
             No masculino, o surfista brasileiro Ítalo Ferreira conquistou a medalha de ouro, destacando-se pela sua habilidade em executar manobras rápidas e ousadas. No feminino, Carissa Moore, dos Estados Unidos, obteve a medalha de ouro com uma performance técnica e estilisticamente impressionante. Moore, uma surfista havaiana, consolidou sua carreira de sucesso no circuito mundial com esta vitória olímpica.
             A inclusão do surf nas Olimpíadas também trouxe à tona a diversidade global do esporte. A competição contou com atletas de diversas nações, refletindo a crescente popularidade e acessibilidade do surf em regiões não tradicionalmente associadas ao esporte, além de países com fortes tradições no surf, como Brasil, Havai, Austrália e Japão.
         </p>
         </article>
 
-        <div class="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item">
-                    <img src="imagens/Caroline Marks.png" alt="Imagem 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="imagens/tatiana weston webb.png" alt="Imagem 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="imagens/Johanne Defay.png" alt="Imagem 3">
-                </div>
-                <div class="carousel-item">
-                    <img src="imagens/Kauli.png" alt="Imagem 4">    
-                </div>
-                <div class="carousel-item">
-                    <img src="imagens/Jack Robinsol.png" alt="Imagem 5">
-                </div>
-                <div class="carousel-item">
-                    <img src="imagens/Gabriel Medina.png" alt="Imagem 6">
-                </div>
-            </div>
-            <div class="carousel-controls">
-                <button class="carousel-control" id="prev">❮</button>
-                <button class="carousel-control" id="next">❯</button>
-            </div>
-        </div>
 
-        <script>
-            const carouselInner = document.querySelector('.carousel-inner');
-            const items = document.querySelectorAll('.carousel-item');
-            let index = 0;
-    
-            document.getElementById('next').addEventListener('click', () => {
-                index = (index + 1) % items.length;
-                updateCarousel();
-            });
-    
-            document.getElementById('prev').addEventListener('click', () => {
-                index = (index - 1 + items.length) % items.length;
-                updateCarousel();
-            });
-    
-            function updateCarousel() {
-                const offset = -index * 100;
-                carouselInner.style.transform = `translateX(${offset}%)`;
-            }
-    
-            // Auto-scroll every 3 seconds
-            setInterval(() => {
-                index = (index + 1) % items.length;
-                updateCarousel();
-            }, 4000);
-        </script>
 
 </body>
 <footer>

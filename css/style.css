@@ -94,7 +94,7 @@ p{
 
 article{
     text-align: center;
-    padding: 1em 5em 5em 5em;
+    padding: 1em 10em 10em 10em;
 }
 
 
@@ -105,9 +105,10 @@ article{
 .olimpiada{
     max-width: 100%;
     height: 20em;
+    padding: 1em 0 0 4em;
 }
 /* ------------------------------------------------------ */
-/* OLIMPIADAS */
+/* OLIMPIADAS IMAGENS LINK*/
 
 
 .imagens-container {
@@ -134,15 +135,16 @@ article{
     width: 100%;
     height: auto;
     border-radius: 4px; /* Borda arredondada */
-    transition: transform 0.3s ease; /* Transição suave */
+    transition: transform 0.5s ease; /* Transição suave */
 }
 
 .imagem:hover {
     transform: scale(1.05); /* Aumenta a imagem em 10% ao passar o mouse */
+    filter: brightness(70%);
 }
 
 /* ------------------------------------------------------------------- */
-/* CAROUSEL OLIMPIADAS */
+/* CAROUSEL RESULTADOS */
 
 .carousel {
     position: relative;
@@ -193,18 +195,40 @@ article{
 /* ------------------------------------------------------------------ */
 /* RESULTADOS */
 
-.h1-resultados{
+.h1-resultados {
     font-family: "Libre Baskerville", serif;
     font-size: 50px;
-    margin-top: 3em;
+    padding: 4em 0 1em 0;
+    text-align: center;
 }
 
-.p-resultados-feminino{
-    padding: 2em 10em 8em 10em;
-}
-
-.feminino{
+.container-olimpiadas {
     display: flex;
+    justify-content: space-between;
+}
+
+.feminino, .masculino {
+    width: 80%; /* Ajuste a largura conforme necessário */
+    padding: 0 2em 1em 2em;
+}
+
+.titulo-surfe-feminino, .titulo-surfe-masculino {
+    font-family: "Libre Baskerville", serif;
+    text-align: justify;
+    font-size: 30px;
+    width: 80%;
+    padding: 0 0 1em 2em;
+    color: #164059;
+}
+
+.p-resultados-feminino, .p-resultados-masculino {
+    text-align: justify;
+}
+
+.subtitulo{
+    text-align: justify;
+    padding: 1em 0 0 3em;
+    color: #164059;
 }
 
 /* ------------------------------------------------------------------ */

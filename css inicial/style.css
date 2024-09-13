@@ -36,7 +36,7 @@ p{
 
 article{
     text-align: center;
-    padding: 10em;
+    padding: 10em 10em 2em 10em;
 }
 
 h1.o-surf{
@@ -44,11 +44,7 @@ h1.o-surf{
     font-size: 50px;
 }
 
-h1.curiosidades-do-surfe{
-    font-family: "Libre Baskerville", serif;
-    text-align: center;
-    font-size: 40px;
-}
+
 
 h1.inicio-historia{
     font-family: "Libre Baskerville", serif;
@@ -76,10 +72,15 @@ h1.beneficios{
     font-size: 40px;
 }
 article.curiosidades{
-    padding: 2px 20em 5em 20em;
+    padding: 10em 20em 5em 20em;
     text-align: justify;
     font-size: 17px;
-    
+}
+
+h1.curiosidades-do-surfe{
+    font-family: "Libre Baskerville", serif;
+    text-align: center;
+    font-size: 40px;
 }
 
 h2.titulo-curiosidades{
@@ -96,6 +97,7 @@ h2.titulo-curiosidades{
 .medina-inicio{
     max-width: 100%;
     height: 23em;
+    padding: 1em 0 0 4em;
 }
 /* ------------------------------------------------------------------ */
 
@@ -106,6 +108,7 @@ h2.titulo-curiosidades{
 .evolucao{
     max-width: 100%;
     height: 23em;
+    padding: 1em 0 0 4em;
 }
 /* ------------------------------------------------------------------ */
 
@@ -116,6 +119,7 @@ h2.titulo-curiosidades{
 .surfebrasil{
     max-width: 100%;
     height: 23em;
+    padding: 1em 0 0 4em;
 }
 /* ------------------------------------------------------------------ */
 
@@ -124,8 +128,9 @@ h2.titulo-curiosidades{
 }
 
 .img-regras{
-    width: 30em;
-    height: 20em;
+    width: 35em;
+    height: 21em;
+    padding: 1em 0 0 4em;
 }
 /* ------------------------------------------------------------------ */
 .img-dupla1{
@@ -134,8 +139,8 @@ h2.titulo-curiosidades{
 
 .normas{
     max-width: 100%;
-    height: 17em;
-    padding-right: 200px;
+    height: 20em;
+    padding: 1em 5em 0 0;
 }
 /* ------------------------------------------------------------------ */
 .img-dupla2{
@@ -145,6 +150,7 @@ h2.titulo-curiosidades{
  .parafina{
      width: 30em;
      height: 15em;
+     padding: 1em 0 0 4em;
 
  }
  /* ------------------------------------------------------------------ */
@@ -155,7 +161,7 @@ h2.titulo-curiosidades{
  .leash{
      width: 30em;
      height: 17em;
-
+     padding: 1em 0 0 4em;
  }
  /* ------------------------------------------------------------------ */
  .img-dupla3{
@@ -165,6 +171,7 @@ h2.titulo-curiosidades{
  .img-beneficios{
      width: 30em;
      height: 17em;
+     padding: 1em 0 0 4em;
 
  }
  /* ------------------------------------------------------------------ */
@@ -173,8 +180,9 @@ h2.titulo-curiosidades{
  }
  
  .ong{
-     width: 27em;
+     width: 30em;
      height: 17em;
+     padding: 1em 0 0 4em;
  }
  /* ------------------------------------------------------------------ */
 .container {
