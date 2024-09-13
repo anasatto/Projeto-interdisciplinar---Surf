@@ -148,7 +148,7 @@ article{
 
 .carousel {
     position: relative;
-    width: 50%;
+    width: 55%;
     margin: auto;
     overflow: hidden;
     border: 1px solid #FFFDF1;
@@ -208,8 +208,7 @@ article{
 }
 
 .feminino, .masculino {
-    width: 80%; /* Ajuste a largura conforme necessário */
-    padding: 0 2em 1em 2em;
+    padding: 0 5em 2em 5em;
 }
 
 .titulo-surfe-feminino, .titulo-surfe-masculino {

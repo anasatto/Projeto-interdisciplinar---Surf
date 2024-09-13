@@ -23,10 +23,69 @@ body{
     /* Adicione outras propriedades específicas aqui, se necessário */
 }
 
+ .container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header {
+    width: 100%;
+    padding: 2% 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+
+header.rolagem {
+    background-color: #FFFDF1;
+    padding: 20px 4%;
+}
+
+header.rolagem a {
+    color: #164059;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a {
+    color: #B8CAD9;
+    text-decoration: none;
+}
+
+.backgrond {
+
+    /* notebook */
+    /* height: 121vh;
+    width: 216vh; */
+
+    /* desktop casa */
+    height: 108vh;
+    /* width: 192vh; */
+    width: 201.4vh;
+
+    /* background-position: 100% 0; */
+}
+
 html {
     height: 500vh;
     background-color: #FFFDF1;
 }
+/* ----------------------------------------------------------------- */
 
 p{
     text-align: justify;
@@ -184,63 +243,6 @@ h2.titulo-curiosidades{
      height: 17em;
      padding: 1em 0 0 4em;
  }
- /* ------------------------------------------------------------------ */
-.container {
-    max-width: 1280px;
-    margin: auto;
-}
-
-.flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-header {
-    width: 100%;
-    padding: 2% 4%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: .5s;
-}
-
-
-header.rolagem {
-    background-color: #FFFDF1;
-    padding: 20px 4%;
-}
-
-header.rolagem a {
-    color: #164059;
-}
-
-header ul {
-    list-style-type: none;
-}
-
-header ul li {
-    display: inline-block;
-    margin: 0 40px;
-}
-
-header ul li a {
-    color: #B8CAD9;
-    text-decoration: none;
-}
-
-.backgrond {
-
-    /* notebook */
-    /* height: 121vh;
-    width: 216vh; */
-
-    /* desktop casa */
-    height: 108vh;
-    width: 192vh;
-
-    /* background-position: 100% 0; */
-}
 
 /* ------------------------------------------------------------------ */
 /* FOOTER */

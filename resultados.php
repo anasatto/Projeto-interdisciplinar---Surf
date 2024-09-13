@@ -25,17 +25,4 @@
     } else {
         echo "Houve um erro ao enviar o e-mail!";
     }
-?>
-
-
-// if(isset($_POST['nome']) or isset($_POST['email']) or isset($_POST['mensagem'])){
-//     $nome = $_POST['nome'];
-//     $email = $_POST['email'];
-//     $mensagem = $_POST['mensagem'];
-
-//     echo $nome;
-//     echo $email;
-//     echo $mansagem;
-// }
-
-// ?>
+?> 
