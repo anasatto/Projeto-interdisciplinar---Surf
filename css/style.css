@@ -155,6 +155,7 @@ article{
     border-radius: 5px;
     margin-bottom: 10em;
     z-index: 5;
+    padding: 5em 0 0 0;
 }
 .carousel-inner {
     display: flex;
@@ -205,6 +206,7 @@ article{
 .container-olimpiadas {
     display: flex;
     justify-content: space-between;
+    padding: 0 0 5em 0;
 }
 
 .feminino, .masculino {
@@ -228,6 +230,18 @@ article{
     text-align: justify;
     padding: 1em 0 0 3em;
     color: #164059;
+}
+
+.container-medalhas {
+    display: flex;
+    justify-content: center; /* Centraliza as imagens */
+    justify-content: space-evenly;
+}
+.imagem-medalhas {
+    margin: 10px; /* Espaçamento entre as imagens */
+    height: 33em;
+    width: 33em;
+    border-radius: 2em;
 }
 
 /* ------------------------------------------------------------------ */

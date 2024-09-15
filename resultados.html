@@ -32,8 +32,68 @@
         </div><!--container-->
     </header>
 
-
     <h1 class="h1-resultados">Olimpiadas 2024</h1>
+    <div class="container-medalhas">
+    <img class="imagem-medalhas" src="imagens/2.png" alt="medalhas feminino">
+    <img class="imagem-medalhas" src="imagens/1.png" alt="medalhas masculino">
+    </div>
+
+    
+<div class="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item">
+            <img src="imagens/Caroline Marks.png" alt="Imagem 1">
+        </div>
+        <div class="carousel-item">
+            <img src="imagens/tatiana weston webb.png" alt="Imagem 2">
+        </div>
+        <div class="carousel-item">
+            <img src="imagens/Johanne Defay.png" alt="Imagem 3">
+        </div>
+        <div class="carousel-item">
+            <img src="imagens/Kauli.png" alt="Imagem 4">    
+        </div>
+        <div class="carousel-item">
+            <img src="imagens/Jack Robinsol.png" alt="Imagem 5">
+        </div>
+        <div class="carousel-item">
+            <img src="imagens/Gabriel Medina.png" alt="Imagem 6">
+        </div>
+    </div>
+    <div class="carousel-controls">
+        <button class="carousel-control" id="prev">❮</button>
+        <button class="carousel-control" id="next">❯</button>
+    </div>
+</div>
+
+<script>
+    const carouselInner = document.querySelector('.carousel-inner');
+    const items = document.querySelectorAll('.carousel-item');
+    let index = 0;
+
+    document.getElementById('next').addEventListener('click', () => {
+        index = (index + 1) % items.length;
+        updateCarousel();
+    });
+
+    document.getElementById('prev').addEventListener('click', () => {
+        index = (index - 1 + items.length) % items.length;
+        updateCarousel();
+    });
+
+    function updateCarousel() {
+        const offset = -index * 100;
+        carouselInner.style.transform = `translateX(${offset}%)`;
+    }
+
+    // Auto-scroll every 3 seconds
+    setInterval(() => {
+        index = (index + 1) % items.length;
+        updateCarousel();
+    }, 3000);
+</script>
+
+
     <div class="container-olimpiadas">
         <article class="feminino">
             
@@ -80,61 +140,7 @@
                 <br>
                 O evento foi marcado por condições desafiadoras e manobras impressionantes, com muitos surfistas demonstrando habilidades técnicas e coragem diante das ondas poderosas de Teahupo'o.</p>
         </article>
-    </div>
-    <div class="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item">
-                <img src="imagens/Caroline Marks.png" alt="Imagem 1">
-            </div>
-            <div class="carousel-item">
-                <img src="imagens/tatiana weston webb.png" alt="Imagem 2">
-            </div>
-            <div class="carousel-item">
-                <img src="imagens/Johanne Defay.png" alt="Imagem 3">
-            </div>
-            <div class="carousel-item">
-                <img src="imagens/Kauli.png" alt="Imagem 4">    
-            </div>
-            <div class="carousel-item">
-                <img src="imagens/Jack Robinsol.png" alt="Imagem 5">
-            </div>
-            <div class="carousel-item">
-                <img src="imagens/Gabriel Medina.png" alt="Imagem 6">
-            </div>
         </div>
-        <div class="carousel-controls">
-            <button class="carousel-control" id="prev">❮</button>
-            <button class="carousel-control" id="next">❯</button>
-        </div>
-    </div>
-
-    <script>
-        const carouselInner = document.querySelector('.carousel-inner');
-        const items = document.querySelectorAll('.carousel-item');
-        let index = 0;
-
-        document.getElementById('next').addEventListener('click', () => {
-            index = (index + 1) % items.length;
-            updateCarousel();
-        });
-
-        document.getElementById('prev').addEventListener('click', () => {
-            index = (index - 1 + items.length) % items.length;
-            updateCarousel();
-        });
-
-        function updateCarousel() {
-            const offset = -index * 100;
-            carouselInner.style.transform = `translateX(${offset}%)`;
-        }
-
-        // Auto-scroll every 3 seconds
-        setInterval(() => {
-            index = (index + 1) % items.length;
-            updateCarousel();
-        }, 3000);
-    </script>
-
 </body>
 <footer>
     <div class="footer-content">
