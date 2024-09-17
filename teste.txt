@@ -1,0 +1,37 @@
+     
+#menu {
+        z-index: 2; /*Define a propriedade z-index como 2. Isso controla a ordem de empilhamento do elemento em relação a outros elementos na página. Um valor maior de z-index coloca o elemento mais acima na pilha.*/
+}
+      
+#menu-bar {
+        width: 45px; 
+        height: 40px;
+        margin: 30px 0 20px 20px; 
+        cursor: pointer; /*Altera o cursor do mouse para um ponteiro quando o mouse passa sobre o elemento, indicando que ele é clicável.*/
+        margin-top: 50px;
+        padding: 4px; 
+}
+    
+.bar {
+        height: 5px; 
+        width: 65%;
+        background-color: #641313; 
+        display: block; 
+        border-radius: 10px;
+        transition: 0.3s ease; /*Define uma transição suave com duração de 0,3 segundos e função de temporização "ease" para os elementos com a classe .bar.*/
+}
+    
+#bar1 { 
+        transform: translateY(-4px); /*Aplica uma transformação que move o elemento 4 pixels para cima (na direção negativa do eixo Y).*/
+        background-color: #641313; 
+}
+      
+#bar3 { 
+        transform: translateY(4px); /*Aplica uma transformação que move o elemento 4 pixels para baixo (na direção positiva do eixo Y).*/
+        background-color: #641313; 
+}
+      
+.nav { 
+        transition: 0.3s ease; 
+        display: none; 
+}

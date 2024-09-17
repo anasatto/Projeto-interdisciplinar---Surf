@@ -14,6 +14,38 @@
     width: 180px; /* Largura padrão para a logo azul */
 }
 
+/*BOTÃO MENU*/
+
+.inicio:hover{
+    transition: 150ms linear; 
+    filter: brightness(130%);
+    font-size: 23px;
+    
+}  /*botao inicio */
+
+.resultados:hover{
+    transition: 150ms linear; 
+    filter: brightness(130%);
+    font-size: 23px;
+    
+}
+
+.olimpiadas:hover{
+    transition: 150ms linear; 
+    filter: brightness(130%);
+    font-size: 23px;
+    
+}
+
+.contato:hover{
+    transition: 150ms linear; 
+    filter: brightness(130%);
+    font-size: 23px;
+    
+}
+
+/*FINAL BOTÃO*/
+
 body{
     font-family: "Montserrat", sans-serif;
     font-size: 17px;
