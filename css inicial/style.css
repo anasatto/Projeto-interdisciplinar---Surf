@@ -8,22 +8,27 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Montserrat", sans-serif;
     font-size: 17px;
 }
+
 .logo {
-    height: 85px; /* Altura padrão para a logo azul */
-    width: 180px; /* Largura padrão para a logo azul */
+    height: 85px;
+    /* Altura padrão para a logo azul */
+    width: 180px;
+    /* Largura padrão para a logo azul */
 }
 
 .logo-branca {
-    height: 110px; /* Altura específica para a logo branca */
-    width: 200px; /* Largura específica para a logo branca */
+    height: 110px;
+    /* Altura específica para a logo branca */
+    width: 200px;
+    /* Largura específica para a logo branca */
     /* Adicione outras propriedades específicas aqui, se necessário */
 }
 
- .container {
+.container {
     max-width: 1280px;
     margin: auto;
 }
@@ -85,218 +90,355 @@ html {
     height: 500vh;
     background-color: #FFFDF1;
 }
+
 /* ----------------------------------------------------------------- */
 
-p{
+p {
     text-align: justify;
     padding: 8px 60px;
 }
 
 
-article{
+article {
     text-align: center;
     padding: 10em 10em 2em 10em;
 }
 
-h1.o-surf{
+h1.o-surf {
     font-family: "Libre Baskerville", serif;
     font-size: 50px;
 }
 
 
 
-h1.inicio-historia{
+h1.inicio-historia {
     font-family: "Libre Baskerville", serif;
     font-size: 40px;
 }
 
-h1.historia-surfe{
+h1.historia-surfe {
     font-family: "Libre Baskerville", serif;
     font-size: 40px;
 }
 
-h1.regras{
+h1.regras {
     font-family: "Libre Baskerville", serif;
     font-size: 40px;
 
-} 
+}
 
-h1.materiais{
+h1.materiais {
     font-family: "Libre Baskerville", serif;
     font-size: 40px;
 }
 
-h1.beneficios{
+h1.beneficios {
     font-family: "Libre Baskerville", serif;
     font-size: 40px;
 }
-article.curiosidades{
+
+article.curiosidades {
     padding: 10em 20em 5em 20em;
     text-align: justify;
     font-size: 17px;
 }
 
-h1.curiosidades-do-surfe{
+h1.curiosidades-do-surfe {
     font-family: "Libre Baskerville", serif;
     text-align: center;
     font-size: 40px;
 }
 
-h2.titulo-curiosidades{
+h2.titulo-curiosidades {
     text-align: justify;
     color: #4474B5;
 }
 
 /* ------------------------------------------------------------------ */
 
-.p-img-inicio{
+.p-img-inicio {
     display: flex;
 }
 
-.medina-inicio{
+.medina-inicio {
     max-width: 100%;
     height: 23em;
     padding: 1em 0 0 4em;
 }
+
 /* ------------------------------------------------------------------ */
 
-.p-img2-inicio{
+.p-img2-inicio {
     display: flex;
 }
 
-.evolucao{
+.evolucao {
     max-width: 100%;
     height: 23em;
     padding: 1em 0 0 4em;
 }
+
 /* ------------------------------------------------------------------ */
 
-.p-img3-inicio{
+.p-img3-inicio {
     display: flex;
 }
 
-.surfebrasil{
+.surfebrasil {
     max-width: 100%;
     height: 23em;
     padding: 1em 0 0 4em;
 }
+
 /* ------------------------------------------------------------------ */
 
-.img-dupla1{
+.img-dupla1 {
     display: flex;
 }
 
-.img-regras{
+.img-regras {
     width: 35em;
     height: 21em;
     padding: 1em 0 0 4em;
 }
+
 /* ------------------------------------------------------------------ */
-.img-dupla1{
-   display: flex;
+.img-dupla1 {
+    display: flex;
 }
 
-.normas{
+.normas {
     max-width: 100%;
     height: 20em;
     padding: 1em 5em 0 0;
 }
+
 /* ------------------------------------------------------------------ */
-.img-dupla2{
+.img-dupla2 {
     display: flex;
- }
- 
- .parafina{
-     width: 30em;
-     height: 15em;
-     padding: 1em 0 0 4em;
+}
 
- }
- /* ------------------------------------------------------------------ */
- .img-dupla2{
-    display: flex;
- }
- 
- .leash{
-     width: 30em;
-     height: 17em;
-     padding: 1em 0 0 4em;
- }
- /* ------------------------------------------------------------------ */
- .img-dupla3{
-    display: flex;
- }
- 
- .img-beneficios{
-     width: 30em;
-     height: 17em;
-     padding: 1em 0 0 4em;
+.parafina {
+    width: 30em;
+    height: 15em;
+    padding: 1em 0 0 4em;
 
- }
- /* ------------------------------------------------------------------ */
- .img-dupla3{
+}
+
+/* ------------------------------------------------------------------ */
+.img-dupla2 {
     display: flex;
- }
- 
- .ong{
-     width: 30em;
-     height: 17em;
-     padding: 1em 0 0 4em;
- }
+}
+
+.leash {
+    width: 30em;
+    height: 17em;
+    padding: 1em 0 0 4em;
+}
+
+/* ------------------------------------------------------------------ */
+.img-dupla3 {
+    display: flex;
+}
+
+.img-beneficios {
+    width: 30em;
+    height: 17em;
+    padding: 1em 0 0 4em;
+
+}
+
+/* ------------------------------------------------------------------ */
+.img-dupla3 {
+    display: flex;
+}
+
+.ong {
+    width: 30em;
+    height: 17em;
+    padding: 1em 0 0 4em;
+}
 
 /* ------------------------------------------------------------------ */
 /* FOOTER */
 footer {
-    background-color: #164059; /* Cor de fundo do footer */
-    color: #ffffff; /* Cor do texto */
-    padding: 40px 2px; /* Espaçamento interno */
-    text-align: center; /* Centraliza o texto */
+    background-color: #164059;
+    /* Cor de fundo do footer */
+    color: #ffffff;
+    /* Cor do texto */
+    padding: 40px 2px;
+    /* Espaçamento interno */
+    text-align: center;
+    /* Centraliza o texto */
 }
 
 .footer-content {
-    margin-bottom: 20px; /* Espaçamento entre o conteúdo e o copyright */
+    margin-bottom: 20px;
+    /* Espaçamento entre o conteúdo e o copyright */
 }
 
 img.img-footer {
-    width: 20em; /* Largura da imagem */
-    height: auto; /* Mantém a proporção */
+    width: 20em;
+    /* Largura da imagem */
+    height: auto;
+    /* Mantém a proporção */
     display: block;
-    margin: 0 auto; /* Centraliza a imagem */
+    margin: 0 auto;
+    /* Centraliza a imagem */
 }
 
 .footer-content p {
-    max-width: 600px; /* Largura máxima do parágrafo */
-    line-height: 1.6; /* Altura da linha */
+    max-width: 600px;
+    /* Largura máxima do parágrafo */
+    line-height: 1.6;
+    /* Altura da linha */
     color: #A5A3A3;
     text-align: justify;
 }
 
 .socials {
-    display: flex; /* Exibe os ícones em linha */
-    justify-content: right; /* Centraliza os ícones */
+    display: flex;
+    /* Exibe os ícones em linha */
+    justify-content: right;
+    /* Centraliza os ícones */
     padding: 0 9em 8em 0;
 }
 
 .socials a {
-    color: #ffffff; /* Cor dos ícones */
-    margin: 0 10px; /* Espaçamento entre os ícones */
-    font-size: 28px; /* Tamanho dos ícones */
-    text-decoration: none; /* Remove o sublinhado */
+    color: #ffffff;
+    /* Cor dos ícones */
+    margin: 0 10px;
+    /* Espaçamento entre os ícones */
+    font-size: 28px;
+    /* Tamanho dos ícones */
+    text-decoration: none;
+    /* Remove o sublinhado */
 }
 
 .footer-bottom {
-    margin-top: 1px; /* Espaçamento acima do copyright */
+    margin-top: 1px;
+    /* Espaçamento acima do copyright */
 }
 
 .footer-bottom p {
-    margin: 0; /* Remove margens */
-    font-size: 13px; /* Tamanho da fonte */
+    margin: 0;
+    /* Remove margens */
+    font-size: 13px;
+    /* Tamanho da fonte */
     text-align: center;
 }
 
 .footer-bottom span {
-    font-weight: lighter; /* Destaca o nome do designer */
+    font-weight: lighter;
+    /* Destaca o nome do designer */
     text-align: center;
     color: #cccccc;
 }
 
+
+
+/* RESPONSIVO */
+@media screen and (max-width: 300px) {
+
+    header {
+        font-size: 10px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+
+    .container {
+        width: 100%;
+    }
+
+    header ul {
+        font-size: 12px
+    }
+
+    header ul li {
+        font-size: 12px
+    }
+
+    header ul li a {
+        color: #B8CAD9;
+        font-size: 12px
+    }
+
+    .backgrond {
+
+        font-size: 12px
+    }
+
+    p {
+        margin: 0;
+        font-size: 1em;
+        
+    }
+
+
+    article {
+        font-size: 4px
+    }
+
+    .h1-resultados {
+        font-size: 5em
+    }
+
+
+    h1.o-surf {
+        font-family: "Libre Baskerville", serif;
+        font-size: 3em;
+        margin-top: 0;
+    }
+
+
+
+    h1.inicio-historia {
+        font-family: "Libre Baskerville", serif;
+        font-size: 12px;
+    }
+
+    h1.historia-surfe {
+        font-family: "Libre Baskerville", serif;
+        font-size: 12px;
+    }
+
+    h1.regras {
+        font-family: "Libre Baskerville", serif;
+        font-size: 12px;
+
+    }
+
+    h1.materiais {
+        font-family: "Libre Baskerville", serif;
+        font-size: 12px;
+    }
+
+    h1.beneficios {
+        font-family: "Libre Baskerville", serif;
+        font-size: 12px;
+    }
+
+    article.curiosidades {
+        padding: 10em 20em 5em 20em;
+        text-align: justify;
+        font-size: 12px;
+    }
+
+    h1.curiosidades-do-surfe {
+        font-family: "Libre Baskerville", serif;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    h2.titulo-curiosidades {
+        text-align: justify;
+        color: #4474B5;
+        font: 12px;
+    }
+
+
+
+}
