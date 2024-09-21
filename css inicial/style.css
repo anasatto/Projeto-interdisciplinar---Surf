@@ -10,7 +10,7 @@
 
 body{
     font-family: "Montserrat", sans-serif;
-    font-size: 17px;
+    font-size: 1rem; /* 16px */
 }
 .logo {
     height: 85px; /* Altura padrão para a logo azul */
@@ -26,6 +26,7 @@ body{
  .container {
     max-width: 1280px;
     margin: auto;
+    padding: 1em; /* Adiciona padding */
 }
 
 .flex {
@@ -33,16 +34,17 @@ body{
     align-items: center;
     justify-content: space-around;
     
-}
-
-.inicio:hover{
+} 
+/* ---------------------------------------------------- */
+/* MENU COM EFEITO "ZOOM IN" */
+/* .inicio:hover{
     transition: 150ms linear; 
     filter: brightness(130%);
     font-size: 23px;
     
-}  /*botao inicio */
+}  botao inicio */
 
-.resultados:hover{
+/* .resultados:hover{
     transition: 150ms linear; 
     filter: brightness(130%);
     font-size: 23px;
@@ -61,7 +63,57 @@ body{
     filter: brightness(130%);
     font-size: 23px;
     
+} */
+/* ---------------------------------------------------- */
+/* Estilos para o botão do menu */
+
+/* Estilos para o botão do menu */
+.menu-toggle {
+    display: none; /* Esconde o botão por padrão */
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
 }
+
+/* Estilos para o menu em telas menores */
+@media (max-width: 768px) {
+    header ul {
+        display: none; /* Esconde o menu por padrão */
+        flex-direction: column; /* Alinha os itens verticalmente */
+        position: absolute;
+        top: 60px; /* Ajuste conforme necessário */
+        left: 0;
+        background-color: #FFFDF1; /* Cor de fundo do menu */
+        width: 100%; /* Largura total */
+        z-index: 1; /* Para ficar acima de outros elementos */
+    }
+
+    header ul.active {
+        display: flex; /* Mostra o menu quando ativo */
+    }
+
+    .menu-toggle {
+        display: block; /* Mostra o botão em telas menores */
+    }
+
+    nav {
+        display: none; /* Esconde o nav original */
+    }
+}
+
+/* Estilos para o menu em telas maiores */
+@media (min-width: 769px) {
+    header ul {
+        display: flex; /* Exibe o menu normalmente */
+        flex-direction: row; /* Alinha os itens horizontalmente */
+    }
+
+    .menu-toggle {
+        display: none; /* Esconde o botão em telas grandes */
+    }
+}
+
 
 header {
     width: 100%;

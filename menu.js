@@ -13,3 +13,9 @@ window.addEventListener("scroll", function() {
         logoAzul.style.display = 'none'; // Oculta a logo azul
     }
 });
+
+// Função para controlar o menu responsivo
+document.getElementById('menu-toggle').addEventListener('click', function() {
+    const menu = document.querySelector('header ul');
+    menu.classList.toggle('active'); // Adiciona ou remove a classe 'active'
+});
