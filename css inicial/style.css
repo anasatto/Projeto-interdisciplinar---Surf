@@ -12,6 +12,7 @@ body{
     font-family: "Montserrat", sans-serif;
     font-size: 1rem; /* 16px */
 }
+
 .logo {
     height: 85px; /* Altura padrão para a logo azul */
     width: 180px; /* Largura padrão para a logo azul */
@@ -20,7 +21,6 @@ body{
 .logo-branca {
     height: 110px; /* Altura específica para a logo branca */
     width: 200px; /* Largura específica para a logo branca */
-    /* Adicione outras propriedades específicas aqui, se necessário */
 }
 
  .container {
@@ -65,55 +65,112 @@ body{
     
 } */
 /* ---------------------------------------------------- */
-/* Estilos para o botão do menu */
 
 /* Estilos para o botão do menu */
-.menu-toggle {
-    display: none; /* Esconde o botão por padrão */
-    background: none;
-    border: none;
-    font-size: 30px;
+
+/* -------------------------------------------------- */
+
+/* Estilos gerais */
+a {
+    color: #000000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    height: 10vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+/* Estilos do menu mobile */
+.mobile-menu {
+    display: none;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-/* Estilos para o menu em telas menores */
-@media (max-width: 768px) {
-    header ul {
-        display: none; /* Esconde o menu por padrão */
-        flex-direction: column; /* Alinha os itens verticalmente */
+.mobile-menu.active {
+    background-color: #164059; /* Cor quando ativo */
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+/* Menu responsivo */
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-list {
         position: absolute;
-        top: 60px; /* Ajuste conforme necessário */
-        left: 0;
-        background-color: #FFFDF1; /* Cor de fundo do menu */
-        width: 100%; /* Largura total */
-        z-index: 1; /* Para ficar acima de outros elementos */
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #164059;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
     }
-
-    header ul.active {
-        display: flex; /* Mostra o menu quando ativo */
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
     }
-
-    .menu-toggle {
-        display: block; /* Mostra o botão em telas menores */
-    }
-
-    nav {
-        display: none; /* Esconde o nav original */
-    }
-}
-
-/* Estilos para o menu em telas maiores */
-@media (min-width: 769px) {
-    header ul {
-        display: flex; /* Exibe o menu normalmente */
-        flex-direction: row; /* Alinha os itens horizontalmente */
-    }
-
-    .menu-toggle {
-        display: none; /* Esconde o botão em telas grandes */
+    .mobile-menu {
+        display: block; /* Exibe o menu mobile em telas pequenas */
     }
 }
 
+.nav-list.active {
+    transform: translateX(0);
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+header.rolagem {
+    background-color: #164059; /* Cor azul quando rolar */
+}
+
+header.rolagem a {
+    color: #FFF; /* Cor do texto na navbar quando rolar */
+}
+
+
+/* ----------------------------------------------------- */
 
 header {
     width: 100%;
@@ -123,6 +180,7 @@ header {
     left: 0;
     transition: .5s;
 }
+
 
 
 header.rolagem {
@@ -153,11 +211,14 @@ header ul li a {
     /* notebook */
     /* height: 121vh;
     width: 216vh; */
+    background: url("medina-inicial.png") no-repeat center center;
+    background-size: cover;
+    height: 117vh;
 
     /* desktop casa */
-    height: 108vh;
+    /* height: 108vh; */
     /* width: 192vh; */
-    width: 201.4vh;
+    /* width: 201.4vh; */
 
     /* background-position: 100% 0; */
 }
@@ -166,6 +227,7 @@ html {
     height: 500vh;
     background-color: #FFFDF1;
 }
+
 /* ----------------------------------------------------------------- */
 
 p{
