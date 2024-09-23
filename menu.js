@@ -3,7 +3,7 @@ window.addEventListener("scroll", function() {
     let logoBranca = document.getElementById('logo-branca');
     let logoAzul = document.getElementById('logo-azul');
 
-    if (window.scrollY > 500) {
+    if (window.scrollY > 300) {
         header.classList.add('rolagem');
         logoBranca.style.display = 'none'; // Oculta a logo branca
         logoAzul.style.display = 'block'; // Mostra a logo azul
