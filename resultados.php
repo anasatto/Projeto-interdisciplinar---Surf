@@ -7,6 +7,5 @@ echo "<h2>Mensagem recebida com sucesso!</h2>";
 echo "Usuário: $nome <br>";
 echo "E-Mail: $email <br>";
 echo "Mensagem: $mensagem";
-
 }
 ?>
