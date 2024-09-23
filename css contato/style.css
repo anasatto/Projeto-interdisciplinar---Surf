@@ -7,70 +7,158 @@
     box-sizing: border-box;
 }
 
-.logo {
-    height: 85px; /* Altura padrão para a logo azul */
-    width: 180px; /* Largura padrão para a logo azul */
-}
-
-/*BOTÃO MENU*/
-
-.inicio:hover{
-    transition: 150ms linear; 
-    filter: brightness(130%);
-    font-size: 23px;
-    
-}  /*botao inicio */
-
-.resultados:hover{
-    transition: 150ms linear; 
-    filter: brightness(130%);
-    font-size: 23px;
-    
-}
-
-.olimpiadas:hover{
-    transition: 150ms linear; 
-    filter: brightness(130%);
-    font-size: 23px;
-    
-}
-
-.contato:hover{
-    transition: 150ms linear; 
-    filter: brightness(130%);
-    font-size: 23px;
-    
-}
-
-/*FINAL BOTÃO*/
-
-body{
+body {
     font-family: "Montserrat", sans-serif;
     font-size: 17px;
     background-color: #FFFDF1;
+    position: relative; /* Para posicionar o formulário em relação ao body */
 }
 
-.container {
-    max-width: 1280px;
-    margin: auto;
+
+.fundo-contato{
+    background: url("contato.jpeg") no-repeat center center;
+    background-size: cover;
+    height: auto;
+    width: 100%;
 }
 
-.flex {
+.logo {
+    height: 85px;
+    /* Altura padrão para a logo azul */
+    width: 180px;
+    /* Largura padrão para a logo azul */
+}
+
+/* ---------------------------------------------------- */
+/* MENU RESPONSIVO */
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+    z-index: 10;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+
+nav {
     display: flex;
-    align-items: center;
     justify-content: space-around;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    height: 10vh;
 }
+
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+    background-color: #16405934;
+    border-radius: 70px;
+}
+
+.mobile-menu.active {
+    color: #ffffff00;
+    /* Cor quando ativo */
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+    .nav-list.active>li>a {
+        color: #fff;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 9vh;
+        right: 0;
+        width: 45vw;
+        height: 92vh;
+        border-radius: 10px;
+        background: #164059dd;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+
+/* ----------------------------------------------------- */
 
 header {
     width: 100%;
     padding: 2% 4%;
     position: fixed;
+    z-index: 2;
     top: 0;
     left: 0;
     transition: .5s;
-    background-color: #FFFDF1;
 }
-
 
 header ul {
     list-style-type: none;
@@ -81,41 +169,17 @@ header ul li {
     margin: 0 40px;
 }
 
-header ul li a{
+header ul li a {
     color: #164059;
     text-decoration: none;
 }
 
-.fundo-contato{
-    height: 90vh;
-    width: 200vh;
-    background-position: center;
-    /* background-repeat: no-repeat;
-    background-size: cover; */
-
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-}
-
-
-/* ---------------------------------------------------------- */
+/* ----------------------------------------------------------------- */
 
 /* contato */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* h1.titulo-contato{
-    color: #164059;
-} */
-
-
-body {
-    font-family: "Montserrat", sans-serif;
-    font-size: 17px;
-    background-color: #FFFDF1;
-    position: relative; /* Para posicionar o formulário em relação ao body */
-}
 
 .fundo-contato {
     height: 90vh;
@@ -206,3 +270,11 @@ form input[type=submit] {
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 }
+
+@media (max-width: 768px) {
+    .logo {
+      height: 50px !important;
+      width: 100px !important;
+    }
+    /* Outras regras específicas para telas menores */
+  }

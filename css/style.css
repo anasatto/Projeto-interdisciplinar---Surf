@@ -14,58 +14,133 @@
     width: 180px; /* Largura padrão para a logo azul */
 }
 
-/*BOTÃO MENU*/
 
-.inicio:hover{
-    transition: 150ms linear; 
-    filter: brightness(130%);
-    font-size: 23px;
-    
-}  /*botao inicio */
-
-.resultados:hover{
-    transition: 150ms linear; 
-    filter: brightness(130%);
-    font-size: 23px;
-    
-}
-
-.olimpiadas:hover{
-    transition: 150ms linear; 
-    filter: brightness(130%);
-    font-size: 23px;
-    
-}
-
-.contato:hover{
-    transition: 150ms linear; 
-    filter: brightness(130%);
-    font-size: 23px;
-    
-}
-
-/*FINAL BOTÃO*/
 
 body{
     font-family: "Montserrat", sans-serif;
     font-size: 17px;
 }
 
-html {
-    /* height: 500vh; */
-    background-color: #FFFDF1;
-} 
+/* ---------------------------------------------------- */
+/* MENU RESPONSIVO */
 
-.container {
-    max-width: 1280px;
-    margin: auto;
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+    z-index: 10;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
 }
 
-.flex {
+a:hover {
+    opacity: 0.7;
+}
+
+
+nav {
     display: flex;
-    align-items: center;
     justify-content: space-around;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    height: 10vh;
 }
+
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+    background-color: #16405934;
+    border-radius: 70px;
+}
+
+.mobile-menu.active {
+    color: #ffffff00;
+    /* Cor quando ativo */
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+    .nav-list.active>li>a {
+        color: #fff;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 9vh;
+        right: 0;
+        width: 45vw;
+        height: 92vh;
+        border-radius: 10px;
+        background: #164059dd;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+
+/* ----------------------------------------------------- */
 
 header {
     width: 100%;
@@ -78,16 +153,6 @@ header {
     z-index: 10;
 }
 
-
- /* header.rolagem {
-    background-color: #fff;
-    padding: 20px 4%;
-}
-
-header.rolagem a {
-    color: #164059;
-}  */
-
 header ul {
     list-style-type: none;
 }
@@ -97,22 +162,18 @@ header ul li {
     margin: 0 40px;
 }
 
-header ul li a{
+header ul li a {
     color: #164059;
     text-decoration: none;
 }
 
-.backgrond{
-    height: 121vh;
-    width: 216vh;
-    background-position: 100% 0;
-    /* background-repeat: no-repeat;
-    background-size: cover; */
 
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+html {
+    /* height: 500vh; */
+    background-color: #FFFDF1;
 }
+
+/* ----------------------------------------------------- */
 
 h1.surfe-olimpiadas{
     font-family: "Libre Baskerville", serif;
@@ -335,10 +396,6 @@ img.img-footer {
 
 /* Para telas com largura máxima de 768px */
 @media (max-width: 768px) {
-    .container {
-      max-width: 100%; /* O container ocupa toda a largura da tela */
-      padding: 20px;
-    }
     .logo {
       height: 50px;
       width: 100px;
