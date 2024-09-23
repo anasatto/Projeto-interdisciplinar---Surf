@@ -13,3 +13,4 @@ window.addEventListener("scroll", function() {
         logoAzul.style.display = 'none'; // Oculta a logo azul
     }
 });
+
