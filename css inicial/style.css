@@ -11,7 +11,7 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-    font-size: 1rem; /* 16px */
+    font-size: 17px;
 }
 
 .logo {
@@ -49,7 +49,6 @@ body {
 /* ---------------------------------------------------- */
 /* MENU RESPONSIVO */
 
-/* Estilos gerais */
 a {
     color: #ffffff;
     text-decoration: none;
@@ -113,7 +112,7 @@ a {
       width: 45vw;
       height: 92vh;
       border-radius: 10px;
-      background: #164059;
+      background: #164059dd;
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
@@ -178,6 +177,7 @@ header.rolagem {
 header.rolagem a {
     color: #164059;
 }
+/* detalhe aquiii */
 
 header ul {
     list-style-type: none;
