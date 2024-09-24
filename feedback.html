@@ -55,7 +55,25 @@
         </section>
     </div>
     
+    <script>
+        function checkScreenSize() {
+            const body = document.body;
+            const windowWidth = window.innerWidth;
 
+            // Verifica se a largura da janela é menor ou igual à metade da largura total
+            if (windowWidth <= window.screen.width / 2) {
+                body.classList.add('hide-background');
+            } else {
+                body.classList.remove('hide-background');
+            }
+        }
+
+        // Verifica o tamanho da tela ao carregar a página
+        window.onload = checkScreenSize;
+
+        // Verifica o tamanho da tela ao redimensionar a janela
+        window.onresize = checkScreenSize;
+    </script>
 </body>
 
 </html>

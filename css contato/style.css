@@ -28,16 +28,20 @@ html {
     width: 100%;
     display: flex;
 }
+        /* Classe para esconder a imagem de fundo */
+        .hide-background {
+            background-image: none !important;
+        }
 
-body {
-    font-family: "Montserrat", sans-serif;
-    font-size: 17px;
-    background-color: #FFFDF1;
-    background-image: url("../imagens/contato.jpeg");
-    background-size: cover; /* Faz a imagem cobrir toda a área */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
-    background-position: left; /* Centraliza a imagem */
-}
+        body {
+            font-family: "Montserrat", sans-serif;
+            font-size: 17px;
+            background-color: #FFFDF1;
+            background-image: url("../imagens/contato.jpeg");
+            background-size: cover; /* Faz a imagem cobrir toda a área */
+            background-repeat: no-repeat; /* Evita que a imagem se repita */
+            background-position: center; /* Centraliza a imagem */
+        }
 
 .fundo-contato {
     height: 90vh;
@@ -335,8 +339,7 @@ form input[type=submit] {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 70% -15% 0 0;
-
+        margin: 1% -34% 0 0;
         
     } 
 }
