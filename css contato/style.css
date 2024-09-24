@@ -1,25 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: "Montserrat", sans-serif;
-    font-size: 17px;
-    background-color: #FFFDF1;
-    position: relative; /* Para posicionar o formulário em relação ao body */
-}
-
-
-.fundo-contato{
-    background: url("contato.jpeg") no-repeat center center;
-    background-size: cover;
-    height: auto;
+html {
     width: 100%;
+    height: 100%;
 }
 
 .logo {
@@ -27,6 +16,39 @@ body {
     /* Altura padrão para a logo azul */
     width: 180px;
     /* Largura padrão para a logo azul */
+}
+
+.space {
+    display: flex;
+    width: 100%;
+    height: 140px;
+}
+
+.container-ultra-fora {
+    width: 100%;
+    display: flex;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    background-color: #FFFDF1;
+    background-image: url("../imagens/contato.jpeg");
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: left; /* Centraliza a imagem */
+}
+
+.fundo-contato {
+    height: 90vh;
+    width: 100%;
+    background-position: center;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
 }
 
 /* ---------------------------------------------------- */
@@ -38,7 +60,9 @@ a {
     transition: 0.3s;
     z-index: 10;
     text-align: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
 
 a:hover {
@@ -101,7 +125,7 @@ nav {
         width: 45vw;
         height: 92vh;
         border-radius: 10px;
-        background: #164059dd;
+        background: #164059c4;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -174,6 +198,14 @@ header ul li a {
     text-decoration: none;
 }
 
+@media (max-width: 768px) {
+    .logo {
+      height: 50px !important;
+      width: 100px !important;
+    }
+    /* Outras regras específicas para telas menores */
+  }
+
 /* ----------------------------------------------------------------- */
 
 /* contato */
@@ -181,34 +213,53 @@ header ul li a {
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    background-color: #FFFDF1;
+    position: relative;
+    /* Para posicionar o formulário em relação ao body */
+}
+
 .fundo-contato {
     height: 90vh;
-    width: 90%; /* Ajustado para 100% da largura */
-    position: absolute; /* Para que fique atrás do formulário */
+    width: 90%;
+    /* Ajustado para 100% da largura */
+    position: absolute;
+    /* Para que fique atrás do formulário */
     top: 5em;
-    left: 11em; 
-    object-fit: cover; /* Para cobrir o espaço */
+    left: 11em;
+    object-fit: cover;
+    /* Para cobrir o espaço */
 }
 
 .form-container {
-    position: fixed; /* Para posicionar em relação à imagem de fundo */
-    top: 30%; /* Distância do topo */
-    right: 15%; /* Distância da direita */
-    width: 500px; /* Largura do formulário */
-    z-index: 1; /* Para garantir que fique sobre a imagem */
+    position: fixed;
+    /* Para posicionar em relação à imagem de fundo */
+    top: 30%;
+    /* Distância do topo */
+    right: 120px;
+    /* Distância da direita */
+    width: 550px;
+    /* Largura do formulário */
+    z-index: 1;
+    /* Para garantir que fique sobre a imagem */
 }
 
 form {
-    background: rgba(22, 64, 89, 0.267); /* Fundo semi-transparente */
+    background: rgba(22, 64, 89, 0.267);
+    /* Fundo semi-transparente */
     border-radius: 35px;
-    padding: 50px; /* Padding ajustado */
+    padding: 50px;
+    /* Padding ajustado */
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 }
 
 form h1 {
     text-align: center;
     margin-bottom: 10px;
-    color: #fff; /* Cor do texto */
+    color: #fff;
+    /* Cor do texto */
     font-size: 22pt;
 }
 
@@ -216,7 +267,8 @@ form p {
     text-align: center;
     margin-bottom: 50px;
     font-size: 20px;
-    color: #fff; /* Cor do texto */
+    color: #fff;
+    /* Cor do texto */
 }
 
 form .input-single {
@@ -240,16 +292,18 @@ form .input-single .input {
     padding: 5px;
     outline: 0;
     font-size: 16px;
-    background: transparent; /* Fundo transparente */
-    color: #fff; /* Cor do texto */
+    background: transparent;
+    /* Fundo transparente */
+    color: #fff;
+    /* Cor do texto */
 }
 
 form .input-single .input:focus {
     border-bottom: 2px solid #2D5966;
 }
 
-form .input-single .input:focus ~ label,
-form .input-single .input:valid ~ label {
+form .input-single .input:focus~label,
+form .input-single .input:valid~label {
     transform: translateY(-20px);
     font-size: 12px;
     color: #2D5966;
@@ -271,10 +325,85 @@ form input[type=submit] {
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 }
 
-@media (max-width: 768px) {
-    .logo {
-      height: 50px !important;
-      width: 100px !important;
+
+
+/* ------------------------------------------------------------------ */
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 550px) {
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 70% -15% 0 0;
+
+        
+    } 
+}
+@media (max-width: 550px) {
+    header {
+        padding: 10px;
     }
-    /* Outras regras específicas para telas menores */
-  }
+    body{
+        width: 50%;
+    }
+
+
+
+    form {
+        padding: 10px;
+        margin: 10% 0 0 0;
+    }
+
+    form .input-single {
+        margin: 15px 0;
+    }
+
+    form .input-single .input {
+        font-size: 12px;
+    }
+
+    form input[type=submit] {
+        font-size: 10pt;
+    }
+
+    .container {
+        max-width: 80%;
+        display: flex; /* Adicionado o ponto e vírgula aqui */
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    @media (max-width: 768px) {
+        .flex {
+            flex-direction: column;
+        }
+    
+        header ul li {
+            margin: 10px 0;
+        }
+/*     
+        .form-container {
+            width: 90%;
+            margin: 50px auto;
+        } */
+    
+        .logo {
+            height: 60px;
+            width: 140px;
+        }
+    
+        form {
+            padding: 15px;
+        }
+    
+        form .input-single .input {
+            font-size: 14px;
+        }
+    
+        form input[type=submit] {
+            font-size: 12pt;
+        }
+    }
+    
+}
