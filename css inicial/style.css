@@ -217,6 +217,7 @@ html {
 p {
     text-align: justify;
     padding: 8px 60px;
+    padding: 1em 5em 1em 5em;
 }
 
 
@@ -283,14 +284,15 @@ h2.titulo-curiosidades {
 
 .medina-inicio {
     max-width: 100%;
-    height: 23em;
-    padding: 1em 0 0 4em;  
+    height: 20em;
+    padding: 1em 0 0 6em;
 }
 
 /* ------------------------------------------------------------------ */
 
 .p-img2-inicio {
     display: flex;
+    padding: 15px 5px 0 25px;
 }
 
 .evolucao {
@@ -652,6 +654,7 @@ img.img-footer {
     .p-img-inicio {
         text-align: center;  /* Centraliza a imagem dentro do contêiner */
         flex-direction: column;
+        display: flex;
     }
 
     .p-img-inicio img {
@@ -788,7 +791,10 @@ img.img-footer {
     }
 
     .medina-inicio {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4px 15px 4px 2px;
 
     }
 
@@ -832,9 +838,9 @@ img.img-footer {
     .socials {
         display: flex;
         /* Exibe os ícones em linha */
-        justify-content: right;
+        justify-content: center;
         /* Centraliza os ícones */
-        padding: 0 9em 8em 0;
+        padding: 0 10em 10em 10em;
     }
 
     .socials a {
