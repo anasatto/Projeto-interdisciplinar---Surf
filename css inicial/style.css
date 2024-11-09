@@ -395,9 +395,28 @@ footer {
     /* Centraliza o texto */
 }
 
+/* FOOTER ROW */
+.footer-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* FOOTER CONTENT */
+
 .footer-content {
     margin-bottom: 20px;
     /* Espaçamento entre o conteúdo e o copyright */
+}
+
+.footer-content p {
+    max-width: 600px;
+    /* Largura máxima do parágrafo */
+    line-height: 1.6;
+    /* Altura da linha */
+    color: #A5A3A3;
+    text-align: justify;
 }
 
 img.img-footer {
@@ -410,21 +429,16 @@ img.img-footer {
     /* Centraliza a imagem */
 }
 
-.footer-content p {
-    max-width: 600px;
-    /* Largura máxima do parágrafo */
-    line-height: 1.6;
-    /* Altura da linha */
-    color: #A5A3A3;
-    text-align: justify;
-}
-
+/* FOOTER SOCIAL */
 .socials {
     display: flex;
     /* Exibe os ícones em linha */
-    justify-content: right;
+
+    flex-grow: 2;
+    /* Determina o tamanho igual ao footer-content */
+
+    justify-content: center;
     /* Centraliza os ícones */
-    padding: 0 9em 8em 0;
 }
 
 .socials a {
@@ -437,6 +451,8 @@ img.img-footer {
     text-decoration: none;
     /* Remove o sublinhado */
 }
+
+/* FOOTER BOTTOM*/
 
 .footer-bottom {
     margin-top: 1px;
@@ -817,7 +833,7 @@ img.img-footer {
     }
 
     img.img-footer {
-        width: 20em;
+        width: 100%;
         /* Largura da imagem */
         height: auto;
         /* Mantém a proporção */
@@ -840,7 +856,6 @@ img.img-footer {
         /* Exibe os ícones em linha */
         justify-content: center;
         /* Centraliza os ícones */
-        padding: 0 10em 10em 10em;
     }
 
     .socials a {

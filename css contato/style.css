@@ -96,7 +96,7 @@ nav {
 .mobile-menu {
     display: none;
     cursor: pointer;
-    background-color: #16405934;
+    background-color: rgba(22, 64, 89, 0.204);
     border-radius: 70px;
 }
 
